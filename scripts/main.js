@@ -1,5 +1,5 @@
 // import * as randLoc from './location.js';
-import locationsArray from '../init-locations.js';
+import locationsArray from '../locations.js';
 
 let locationElement = document.getElementById("bgrtwo");
 let locationElement2 = document.getElementById("bgrone");
