@@ -22,8 +22,8 @@ function main() {
 function colorFunction1() {
     document.getElementById("targetloc").innerHTML = "The Treasure is in the location ";
     document.getElementById("lbl").innerHTML = targetLoc.Name;
-    document.getElementById("device-lat1").innerHTML = targetLoc.latitude.toFixed(6);
-    document.getElementById("device-long1").innerHTML = targetLoc.longitude.toFixed(6);
+    document.getElementById("device-lat1").innerHTML = targetLoc.coordinates[0].latitude;
+    document.getElementById("device-long1").innerHTML = targetLoc.coordinates[0].longitude;
     let utterance = new SpeechSynthesisUtterance(`The location where the treasure is ${targetLoc.Name}`);
     speechSynthesis.speak(utterance);
 
