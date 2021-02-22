@@ -32,7 +32,7 @@ function isValid(device)
         throw new Error(InvalidDevice)
 }
 
-function isInsideCircle(device, location)
+export function isInsideCircle(device, location)
 {
     if(isValid(device)&&isValid(location))
     {
