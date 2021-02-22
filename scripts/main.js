@@ -1,5 +1,6 @@
 // import * as randLoc from './location.js';
 import locationsArray from '../locations.js';
+import {isInsideCircle} from './location-circle.js';
 
 let locationElement = document.getElementById("bgrtwo");
 let locationElement2 = document.getElementById("bgrone");
