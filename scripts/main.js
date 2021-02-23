@@ -89,3 +89,4 @@ function distanceBetweenLocations(questLat, questLon) {
     const d = R * c;
     return d; 
 }
+}

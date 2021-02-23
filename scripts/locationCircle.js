@@ -1,7 +1,7 @@
-function isValid(coordinate) {
+function  isValid(coordinate) {
     let lat = coordinate.latitude;
     let lon = coordinate.longitude;
-
+    
     if (!(lat < -90 || lat > 90 || lon < -180 || lon > 180))
         return true;
     else
@@ -17,22 +17,23 @@ function isValidType(location){
     }
 }
 
-function isValid(location) {
-    if (location.name.length > 0 && isValidType(location) && isValid(location.coordinates) && location.radiusMeters == 30.0)
+function isValidLocation(location) {
+    
+    if (location.name.length > 0 && isValidType(location) && isValidLocation(location.coordinates) && location.radiusMeters == 30.0)
         return true;
     else
         throw new Error(InvalidLocation);
 }
 
-function isValid(device)
+function isValidD(device)
 {
-    if(isValid(device.coordinate))
+    if(isValidD(device.coordinate))
         return true;
     else
         throw new Error(InvalidDevice)
 }
 
-export function isInsideCircle(device, location)
+ function isInsideCircle(device, location)
 {
     if(isValid(device)&&isValid(location))
     {
@@ -53,3 +54,4 @@ export function isInsideCircle(device, location)
         return false;
 }
 
+module.exports= isValidLocation;
