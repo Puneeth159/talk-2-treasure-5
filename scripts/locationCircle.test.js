@@ -2,7 +2,7 @@ import geolocation, {
    inside,
    isValidType,
    isValidLocation,
- } from "./locationCircle";
+ } from "./location-circle";
  describe("inside", () => {
    it("returns false when device latitude is less than south bounding", () => {
      const device = {
