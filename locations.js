@@ -9,7 +9,10 @@ export default [
             }
         ],
         radiusMeters: 30.0,
-
+        North: 40.351124,
+        South: 35.842534,
+        East: -91.881893,
+        West: -94.824532, 
     },
     {
         Name: 'Olive DeLuce Fine Arts Building',
@@ -21,7 +24,10 @@ export default [
             }
         ],
         radiusMeters: 30.0,
-
+        North: 40.35614,
+        South: 35.84265,
+        East: -91.88239,
+        West: -94.88219,
     },
     {
         Name: 'Colden Pond',
@@ -33,6 +39,9 @@ export default [
             }
         ],
         radiusMeters: 30.0,
-
+        North: 40.35614,
+        South: 35.8425,
+        East: -91.88189,
+        West: -94.88189,
     }
 ];
