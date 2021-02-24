@@ -7,30 +7,40 @@ function  isValid(coordinate) {
     else
         return false;
 }
-
-function isValidType(location){
-    if(location.type === "circle"){
+// function isValidArguments(device,location){
+//     if(device == '' || location == '')
+// {
+//   throw "Two valid arguments are needed";
+// }
+// else{
+//   return true;
+// }
+// }
+function isValidType(loc){
+    if(loc.type === "circle"){
         return true;
     }
     else{
-        throw new Error(InvalidLocationType);
+        // var invalidLocation = 'Not a valid location';
+        throw "Invalid Location Type";
     }
 }
 
-function isValidLocation(location) {
-    
-    if (location.name.length > 0 && isValidType(location) && isValidLocation(location.coordinates) && location.radiusMeters == 30.0)
+export function isValidLocation(location) {
+    // var name = location.name;
+    // let radiusMeters = location.radiusMeters;
+    if (location.name.length >0 && isValidType(location) && isValid(coordinate) && radiusMeters == 30.0)
         return true;
     else
-        throw new Error(InvalidLocation);
+     //var invalidLocation = 'Not a valid location';
+        throw "Invalid Location";
 }
-
-function isValidD(device)
+function isValidDevice(device)
 {
-    if(isValidD(device.coordinate))
+    if(isValidDevice(device.coordinate))
         return true;
     else
-        throw new Error(InvalidDevice)
+        throw "InvalidDevice";
 }
 
  function isInsideCircle(device, location)
@@ -43,7 +53,7 @@ function isValidD(device)
         let lLat = location.coordinates[0].latitude;
         let lLon = location.coordinates[0].longitude;
 
-        if(dLat<=lLat && dlon<=lLon)
+        if(dLat<=lLat && dLon<=lLon)
         {
             return true;
         }
@@ -53,5 +63,3 @@ function isValidD(device)
     else
         return false;
 }
-
-module.exports= isValidLocation;

@@ -1,13 +1,10 @@
 {
   "name": "talk-2-treasure-5",
   "version": "1.0.0",
-  "description": "(https://analytics.google.com/analytics/web/?utm_source=marketingplatform.google.com&utm_medium=et&utm_campaign=marketingplatform.google.com%2Fabout%2Fanalytics%2F#/p262098986/realtime/overview?params=_u..nav%3Ddefault)",
+  "description": "Talk2-Treasure-5",
   "main": "locations.js",
-  "dependencies": {},
-  "devDependencies": {
-    "jest": "^26.6.3"
-  },
-  "scripts": {
+    "scripts": {
+      "start": "locations.js",
     "test": "jest"
   },
   "repository": {
@@ -20,5 +17,15 @@
   "bugs": {
     "url": "https://github.com/Puneeth159/talk-2-treasure-5/issues"
   },
-  "homepage": "https://github.com/Puneeth159/talk-2-treasure-5#readme"
+  "homepage": "https://github.com/Puneeth159/talk-2-treasure-5#readme",
+  "devDependencies":{ 
+    "@babel/core": "^7.13.1",
+    "@babel/preset-env": "^7.13.5",
+    "babel-jest": "^26.6.3",
+    "jest": "^26.6.3"
+  },
+  "dependencies": {
+    "lint": "^0.7.0",
+    "prettier": "^2.2.1"
+  }
 }
