@@ -17,14 +17,14 @@ function isValidType(location){
     }
 }
 
-function isValid(location) {
+function isValidLocation(location) {
     if (location.name.length > 0 && isValidType(location) && isValid(location.coordinates) && location.radiusMeters == 30.0)
         return true;
     else
         throw new Error(InvalidLocation);
 }
 
-function isValid(device)
+function isValidDevice(device)
 {
     if(isValid(device.coordinate))
         return true;
@@ -34,7 +34,7 @@ function isValid(device)
 
 export function isInsideCircle(device, location)
 {
-    if(isValid(device)&&isValid(location))
+    if(isValidDevice(device)&&isValidLocation(location))
     {
         let dLat = device.coords.latitude;
         let dLon = device.coords.longitude;
