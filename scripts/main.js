@@ -73,7 +73,16 @@ async function locationHandler() {
          document.getElementById("error-message").innerHTML = "";
      }
     
-
+    }
+    function isInside(questLat, questLon) {
+        let distance = distanceBetweenLocations(questLat, questLon);
+        console.log("distance: " + distance);
+        if (distance < 30) {
+            return true;
+        } else {
+            return false;
+        }
+    }
 function distanceBetweenLocations(questLat, questLon) {
     const R = 6371e3;
     const φ1 = currentlat * Math.PI / 180;
@@ -89,4 +98,8 @@ function distanceBetweenLocations(questLat, questLon) {
     const d = R * c;
     return d; 
 }
+<<<<<<< HEAD
 }
+=======
+
+>>>>>>> 32272adb09ff3918740004166b1d6088d6408dcc
